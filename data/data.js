@@ -14,45 +14,17 @@ export const links = [
   },
   {
     id: 2,
-    url: "/services",
+    url: "/",
     text: "services",
   },
   {
     id: 3,
-    url: "/about",
+    url: "/",
     text: "about",
   },
   {
     id: 4,
-    url: "/contact",
-    text: "contact",
-  },
-];
-
-export const social = [
-  {
-    id: 1,
     url: "/",
-    icon: <GiFootprint />,
-  },
-  {
-    id: 2,
-    url: "https://www.twitter.com",
-    icon: <FaTwitter />,
-  },
-  {
-    id: 3,
-    url: "https://www.instagram.com",
-    icon: <FaInstagram />,
-  },
-  {
-    id: 4,
-    url: "https://www.youtube.com",
-    icon: <FaYoutube />,
-  },
-  {
-    id: 5,
-    url: "https://www.facebook.com",
-    icon: <FaFacebookSquare />,
+    text: "contact",
   },
 ];

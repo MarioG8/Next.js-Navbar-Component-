@@ -10,7 +10,7 @@
 }
 
 .navigation.active {
-  background: rgba(231, 180, 11, 0.781);
+  background: rgba(95, 11, 231, 0.781);
   /* background: rgba(156, 29, 29, 0.9); */
   box-shadow: var(--dark-shadow);
 }
@@ -30,9 +30,14 @@
 
 .logo a {
   font-family: "Poppins", sans-serif;
+  font-weight: 700;
   color: var(--clr-primary-6);
   font-size: 21px;
   font-weight: 500;
+}
+
+.span {
+  font-family: "Nosifer", cursive;
 }
 
 .icon {

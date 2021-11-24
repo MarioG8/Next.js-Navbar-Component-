@@ -50,7 +50,9 @@ const Navbar = () => {
           <div className={styles.header}>
             <div className={styles.logo}>
               <Link href="/">
-                <a>navigation</a>
+                <a>
+                  Navigation<span className={styles.span}>bar</span>
+                </a>
               </Link>
               <GiNinjaHead className={styles.icon} />
             </div>
@@ -72,7 +74,7 @@ const Navbar = () => {
                 );
               })}
               <div className={styles.login_container}>
-                <Link href="/login" passHref>
+                <Link href="/" passHref>
                   <button className={styles.login_btn}>Log in</button>
                 </Link>
               </div>
