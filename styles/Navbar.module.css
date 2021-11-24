@@ -1,0 +1,152 @@
+.navigation {
+  font-family: "Poppins", sans-serif;
+  position: sticky;
+  top: 0;
+  z-index: 3;
+  background: rgba(0, 0, 0, 0.95);
+  box-shadow: var(--dark-shadow);
+  transition-timing-function: ease-in-out;
+  transition: all 750ms;
+}
+
+.navigation.active {
+  background: rgba(231, 180, 11, 0.781);
+  /* background: rgba(156, 29, 29, 0.9); */
+  box-shadow: var(--dark-shadow);
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.875rem 0.7rem;
+}
+
+.logo {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.logo a {
+  font-family: "Poppins", sans-serif;
+  color: var(--clr-primary-6);
+  font-size: 21px;
+  font-weight: 500;
+}
+
+.icon {
+  font-size: 27px;
+  color: var(--clr-primary-6);
+  margin-left: 0.5rem;
+}
+
+.toggle {
+  font-size: 1.5rem;
+  color: var(--clr-primary-6);
+  background: transparent;
+  border-color: transparent;
+  transition: transform 500ms ease;
+  cursor: pointer;
+}
+.toggle:hover {
+  transform: rotate(180deg);
+}
+
+.links a {
+  color: var(--clr-primary-6);
+  font-size: 15px;
+  font-weight: 500;
+  /* text-transform: uppercase; */
+  letter-spacing: var(--spacing);
+  display: block;
+  padding: 0.5rem 1rem;
+  transition: all 350ms ease-out;
+}
+
+.links a:hover {
+  text-decoration: underline;
+  background: rgba(255, 255, 255, 0.1);
+  padding-left: 1.5rem;
+  opacity: 0.33;
+}
+
+.linksContainer {
+  height: 0;
+  overflow: hidden;
+  transition: var(--transition);
+}
+
+.show-container {
+  height: 50rem;
+}
+
+.login_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.login_btn {
+  font-family: inherit;
+  font-weight: bold;
+  /* text-transform: uppercase; */
+  cursor: pointer;
+  display: inline-block;
+  text-decoration: none;
+  background-color: transparent;
+  padding: 0.65em 1.25em;
+  border-radius: 0.2em;
+  margin-left: 1.8rem;
+  color: rgb(46, 44, 44);
+  border: 1px solid var(--clr-neutral-100);
+  color: var(--clr-primary-6);
+  background-color: transparent;
+  transition: all 350ms ease-in-out;
+}
+
+.login_btn:hover {
+  background-color: #fff;
+  color: #000;
+  border: 1px solid var(--clr-neutral-100);
+}
+
+@media screen and (min-width: 760px) {
+  .center {
+    max-width: 1299px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.75rem 0.7rem;
+  }
+  .header {
+    padding: 0;
+  }
+  .toggle {
+    display: none;
+  }
+  .linksContainer {
+    height: auto !important;
+  }
+  .links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .links a {
+    padding: 0;
+    margin: 0 0.8rem;
+  }
+  .links a:hover {
+    padding: 0;
+    background: transparent;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .login_container {
+    padding: 0 0 1rem;
+    margin-left: 0;
+  }
+}
